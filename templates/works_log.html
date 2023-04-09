@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url}}">
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+<h4>Works log</h4>
+{% for item in actions%}
+    <h2>Action # {{item.id}}</h2>
+    <table>
+        <tr>
+            <th>Title of activity</th>
+            <th>Team leader</th>
+            <th>Duration</th>
+            <th>List of collaborators</th>
+            <th>Is finished</th>
+        </tr>
+        <tr>
+            <td>{{item.job}}</td>
+            <td>{{item.team_leader}}</td>
+            <td>{{item.work_size}}</td>
+            <td>{{item.collaborators}}</td>
+            <td>{{item.is_finished}}</td>
+        </tr>
+    </table>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

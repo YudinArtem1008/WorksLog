@@ -1,0 +1,21 @@
+h4 {
+    text-align: center;
+    vertical-align: middle;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+th {
+    background: rgb(160, 160, 160);
+    color: #000000;
+    padding: 10px;
+}
+td {
+    background: rgb(66, 170, 255);
+    color: #000000;
+    padding: 10px;
+}
+td:nth-child(5){
+    background: rgb(205, 92, 92);
+}
